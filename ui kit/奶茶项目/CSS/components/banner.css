@@ -1,0 +1,44 @@
+.banner {
+    background-image: linear-gradient(200deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 50%), url(../../images/background.jpg);
+    padding: 200px 0; /* 修正padding的值，0后面多了o */
+    color: antiquewhite; /* 末尾需要分号 */
+    background-size: cover; /* 背景图像的大小 */
+    background-position: center; /* 图片居中对齐 */
+    padding: 160px 0; /* 确保 banner 有足够高度 */
+    text-align: center; /* 让 banner 中的文本居中 */
+}
+
+/* 文字效果，确保在渐变层之上 */
+.banner h1, .banner h3 {
+    position: relative;
+    z-index: 2; /* 确保文字在渐变叠加层上方 */
+    font-family: 'Pacifico', cursive; /* 优雅的手写字体 */
+    font-size: 48px;
+    animation: fadeInDown 1s ease-in-out; /* 添加淡入动画 */
+    color: white;
+}
+
+/* 为文字添加动画 */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* 文字从上方滑入 */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* 适应屏幕变化 */
+@media (max-width: 960px) {
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .btn-yellow {
+        padding: 10px 30px;
+    }
+}

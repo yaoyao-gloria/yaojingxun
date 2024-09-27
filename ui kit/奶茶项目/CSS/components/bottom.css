@@ -1,0 +1,29 @@
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+}
+
+.list-inline {
+    display: flex; /* 使用 flexbox 实现水平排列 */
+    list-style: none; /* 移除列表的默认样式 */
+    padding: 0; /* 移除默认的内边距 */
+    margin-top: 20px;
+}
+
+.list-inline li {
+    margin: 0 15px; /* 每个图标之间的间隔 */
+}
+
+.list-inline a {
+    color: pink; /* 图标颜色 */
+    font-size: 40px; /* 图标大小 */
+    text-align: center; /* 居中对齐 */
+}
+
+.list-inline i {
+    display: inline-block;
+}
+
+

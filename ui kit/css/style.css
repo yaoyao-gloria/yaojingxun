@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Roboto");
+
+/* Importing all components file */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/container.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+@import url("components/subscription.css");
+@import url("components/header.css");
+
+
+
+/* General style rules for fonts and colours */
+body {
+    font-family: 'Lora', sans-serif;
+    background-color: rgb(240,240,240);
+    background: linear-gradient(to bottom right,rgb(255, 255, 255), rgb(175, 229, 222));
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Georgia', serif; /* 修改字体 */
+    font-size: 25px; /* 字体大小 */
+    color:hotpink; /* 整体文本颜色 */
+    line-height: 1.8; /* 行距 */
+    max-width: 600px;
+    margin: 0 auto 40px; /* 居中对齐并增加下方间距 */
+    letter-spacing: 1px; /* 字间距 */
+}
+
+        /* 主标题样式（渐变字体） */
+    h1 {
+        font-size: 52px;
+        font-weight: bold;
+        background: linear-gradient(to right,rgb(241, 43, 142), rgb(244, 224, 110)); /* 渐变颜色 */
+        -webkit-background-clip: text; /* 背景裁剪到文字 */
+        color: transparent; /* 文字颜色透明以显示背景 */
+        margin-top: 50px;
+        font-family: 'Pacifico', cursive; /* 更具个性的字体 */
+    
+          
+        }
+    h2 {
+        font-size: 40px; /* 字体大小 */
+        font-weight: 700;
+        color: orange;
+        text-align: center; /* 居中对齐 */
+        margin-bottom: 20px; /* 增加下方间距 */
+ 
+    }
+
+     h3 {
+        font-size: 35px; /* 字体大小 */
+        font-weight: bold;
+        color:rgb(0, 208, 255); /* 字体颜色，您可以根据需要选择 */
+        text-align: center; /* 居中对齐 */
+        margin-bottom: 20px; /* 增加下方间距 */
+    }
+    h4{
+        font-size: 33px; /* 字体大小 */
+        font-weight: bold;
+        color:hotpink; /* 字体颜色，您可以根据需要选择 */
+        text-align: center; /* 居中对齐 */
+        margin-bottom: 20px; /* 增加下方间距 */
+    }
+    h5{
+        font-size: 25px; /* 字体大小 */
+        font-weight: bold;
+        color:hotpink; /* 字体颜色，您可以根据需要选择 */
+        text-align: center; /* 居中对齐 */
+        margin-bottom: 20px; /* 增加下方间距 */
+
+    }
+    /* 通用的基础样式 */
+.effect {
+    font-weight: 700; /* 加粗 */
+    font-size: 28px; /* 字体大小 */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Mood 的效果 - 渐变色 + 文字阴影 */
+.Mood {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #ff512f, #f09819); /* 渐变从橙色到黄色 */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 文字阴影 */
+}
+
+/* Star Signs 的效果 - 立体感 + 背景颜色 */
+.Star-signs {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* 紫色到蓝色渐变 */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* 更强的文字阴影 */
+}
+
+/* MBTI 的效果 - 线性渐变 + 文字边框 */
+.MBTI {
+    font-family: 'Roboto', sans-serif;
+    color: #43e97b; /* 绿色作为主要文字颜色 */
+    text-shadow: 0px 0px 10px rgba(66, 245, 182, 0.8); /* 发光效果 */
+    border: 2px solid #38f9d7; /* 添加文字的边框效果 */
+    padding: 2px 5px; /* 增加内边距让边框更明显 */
+    border-radius: 5px; /* 圆角效果 */
+}
+
+
+    
+
+
+
+
+

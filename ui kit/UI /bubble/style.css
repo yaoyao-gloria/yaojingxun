@@ -1,0 +1,135 @@
+/* 确保整个页面的背景颜色一致 */
+html, body {
+    height: auto; /* 确保页面根据内容扩展高度 */
+    margin: 0;
+    padding: 0;
+    background-color: #f7e8ff; /* 设置和上面的背景颜色一致 */
+    overflow-x: hidden; /* 防止水平滚动条 */
+}
+
+
+/* 设置基础布局 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh; /* 确保容器最小高度为100vh */
+    justify-content: center;
+    background-color: #f7e8ff; /* 背景颜色与页面一致 */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-block {
+    width: 80%;
+    max-width: 600px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    margin-top: 20px; /* 添加上方外边距，避免文字被页面顶部覆盖 */
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* 图片样式 */
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 按钮样式 */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.return-button {
+    background-color: #caf5f7; /* 设置为与容器一致的背景颜色 */
+    color: black;
+    border: 2px solid #6a5acd;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.return-button:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+
+
+/* 响应式设计 */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 24px;
+    }
+    .image-container img {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 22px;
+    }
+    .image-container img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .text-block {
+        padding: 15px;
+    }
+    .image-container img {
+        width: 80%;
+        max-width: 400px;
+    }
+    .return-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
+

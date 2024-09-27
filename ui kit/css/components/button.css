@@ -1,0 +1,25 @@
+
+.btn-yellow {
+
+    background-color: rgb(255, 242, 0); /* 按钮初始背景 */
+    padding: 15px 40px; /* 按钮内边距 */
+    border-radius: 45px; /* 按钮圆角 */
+    font-weight: 1200;/* 字体加粗 */
+    color: rgb(0, 136, 255); /* 按钮初始文字颜色 */
+    border: 2px solid black; /* 按钮边框 (修正 border 属性) */
+    display: inline-block; /* 确保按钮是内联块状元素 */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* 平滑过渡效果 */
+    text-decoration: none; /* 取消下划线 */
+}
+
+.btn-yellow:hover {
+    background-color: aquamarine; /* 悬停时背景颜色 */
+    color: orange; /* 悬停时文字颜色 */
+    transform: scale(1.6); /* 悬停时按钮放大 */
+    color: #f62aa1;
+}
+
+
+
+
+

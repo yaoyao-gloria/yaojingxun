@@ -1,0 +1,10 @@
+
+.circle {
+    width: 180px; /* 设置图片的宽度，可以根据需要调整 */
+    height: 180px; /* 设置图片的高度，与宽度相同保证是正方形 */
+    border-radius: 50%; /* 将图片变为圆形 */
+    object-fit: cover; /* 确保图片不会变形，自动裁剪以适应容器 */
+    display: block;
+    margin: 0 auto; /* 图片居中 */
+}
+

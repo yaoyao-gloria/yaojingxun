@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <title>Show GIF</title>
+    <style>
+        /* 父容器设置为 flex 布局 */
+        .container {
+            display: flex;
+            align-items: center; /* 垂直居中对齐 */
+            justify-content: flex-start; /* 从左边开始排列内容 */
+        }
+
+        /* 左侧部分，包括 h1 和 img */
+        .left-section {
+            display: flex;
+            flex-direction: column; /* 垂直排列 h1 和 img */
+            align-items: flex-start; /* 左对齐 */
+        }
+
+        /* 图片样式 */
+        .gif-image {
+            width: 400px; /* 缩小图片 */
+            height: auto;
+            border: 2px solid #000;
+            margin-right: 100px; /* 图片和 h2 之间的间隔 */
+        }
+
+        /* h2 样式 */
+        h2  {
+            margin: 0;
+            max-width: 700px; /* 限制文本最大宽度 */
+            position: relative; /* 相对定位 */
+            top: 40px; /* 向下移动 h2，调节此值以控制位置 */
+        }
+        h1 {
+            color: hotpink;
+            font-family: "Titan One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* 将 header 放到页面右上角 */
+        header {
+            position: absolute;
+            top: 15px;
+            right: 19px;
+        }
+
+        nav ul {
+            list-style-type: none; /* 移除列表的默认样式 */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block; /* 让菜单项水平排列 */
+            margin-left: 40px; /* 增加菜单项之间的距离 */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4b1041; /* 导航链接的颜色 */
+            font-weight: bold;
+            font-size: 22px; /* 设置字体大小 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 立体效果，通过阴影实现 */
+        }
+
+        nav ul li a:hover {
+            color:hotpink; /* 鼠标悬停时的效果 */
+            transform: scale(1.3); /* 鼠标悬停时放大 10% */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* 鼠标悬停时阴影更强 */
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="file:///Users/samoyed/Desktop/ui%20kit/index.html">Home</a></li>
+                    <li><a href="file:///C:/Users/Matiia/Desktop/%E5%A5%B6%E8%8C%B6%E9%A1%B9%E7%9B%AE/index.html">Menu</a></li>
+                    <li><a href="">STEPS</a></li>
+                    <li><a href="">Unique Bubble Tea</a></li>
+        
+                </ul>
+             </nav>
+        </header>
+        <div class="left-section">
+            <h1>Angel-B</h1>
+            <img src="images/pink2.webp" alt="示例GIF" class="gif-image">
+        </div>
+        <ul>
+            <h2><li><strong>Tea:</strong> green tea</li>
+             <li><strong>Milk or Creamer</strong>: regular milk, non-dairy creamer</li>
+             <li><strong>Sweetener</strong>: flavored syrup</li>
+             <li><strong>Tapioca Pearls</strong>: The chewy, round balls made from tapioca starch.</li>
+             <li><strong>Additional</strong>: strawberry, blueberry</li>
+            </h2>
+        </ul>
+    </div>
+
+
+</body>
+</html>

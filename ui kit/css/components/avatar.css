@@ -1,0 +1,16 @@
+
+.avatar {
+    width: 120px; /* 设置头像宽度 */
+    height: 120px; /* 设置头像高度 */
+    border-radius: 50%; /* 让头像变为圆形 */
+    border: 4px solid yellow; /* 添加一个白色边框 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 添加较大的阴影 */
+    object-fit: cover; /* 确保图片不会变形 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+/* 悬停效果 */
+.avatar:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* 悬停时增加阴影效果 */
+}

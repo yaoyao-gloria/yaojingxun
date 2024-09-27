@@ -1,0 +1,47 @@
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* 卡片之间的间距 */
+    flex-wrap: wrap; /* 响应式设计：小屏幕时卡片会换行 */
+    text-align: center;
+    width: 100%; /* 确保容器的宽度占满页面 */
+}
+
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    padding: 20px;
+    margin: 40px;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* 圆角与卡片一致 */
+}
+.card h3 {
+
+    font-size: 22px; 
+    color: yellow;    
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+.circle-image {
+    width: 200px;  /* 可以根据需要调整宽度 */
+    height: 200px; /* 确保高度与宽度相同 */
+    border-radius: 50%; /* 将图片裁剪成圆形 */
+    object-fit: cover; /* 保持图片内容的正确显示 */
+}

@@ -1,0 +1,58 @@
+.personal-gallery {
+    flex: 0 0 auto; /* 防止缩小，保持原始宽度 */
+    width: 300px; /* 设置每个项目的宽度 */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; /* 每个容器之间的间隔 */
+    transition: transform 0.3s ease-in-out; /* 添加悬停动画 */
+    
+}
+.personal-gallery:hover {
+    transform: scale(1.05); /* 悬停时放大效果 */
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-image:hover {
+    transform: scale(1.1);
+}
+.gallery-container:hover {
+    animation-play-state: paused;
+}
+h2{ 
+    color: #bc6eaf;
+    text-align: center;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gallery-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    white-space: nowrap; /* 防止文本自动换行 */
+    overflow: hidden; /* 隐藏溢出的文本 */
+    text-overflow: ellipsis; /* 溢出时用省略号表示 */
+    width: 100%; /* 保证内容占满容器 */
+    
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0); /* 从初始位置开始 */
+    }
+    to {
+        transform: translateX(-100%); /* 移动到左侧完全退出视口 */
+    }
+}
+
+

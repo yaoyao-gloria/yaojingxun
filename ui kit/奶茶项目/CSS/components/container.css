@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.gallery-scroll-container {
+    overflow: hidden; /* 隐藏溢出部分 */
+    width: 100%; /* 设置容器宽度 */
+    position: relative; /* 为绝对定位做准备 */
+}
+
+
+
+/* 内部容器，设置为水平排列 */
+.gallery-container {
+    display: flex; /* 使用 Flexbox 水平排列 */
+    animation: scroll 20s linear infinite; /* 启用动画 */
+}
+
+
+/* 媒体查询 */
+@media (max-width: 960px) {
+    .gallery-container {
+        gap: 15px;
+    }
+    .personal-gallery {
+        flex: 1 1 calc(50% - 15px); /* 调整为两列布局 */
+    }
+}
+
+@media (max-width: 720px) {
+    .gallery-container {
+        gap: 10px;
+    }
+    .personal-gallery {
+        flex: 1 1 100%; /* 一列布局 */
+        max-width: 100%;
+    }
+}
+
+
+
+

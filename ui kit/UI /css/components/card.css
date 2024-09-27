@@ -1,0 +1,76 @@
+/* 调整卡片布局为横向排列 */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* 卡片之间的间距 */
+    flex-wrap: wrap; /* 响应式设计：小屏幕时卡片会换行 */
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #f3d4d4;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card-content {
+    margin-top: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.apply-button {
+    padding: 10px 20px;
+    background-color: #6a5acd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #f07676;
+}
+
+
+/* card 响应式设计 */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    footer p.bar {
+        font-size: 0.875rem; /* 小屏幕时字体变小 */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .apply-button {
+        font-size: 1rem;
+    }
+}
